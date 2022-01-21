@@ -41,7 +41,7 @@ jobs:
           context: ./src # pasta do proj que tem o docker file
           file: ./src/Dockerfile
           push: true
-          tags:
+          tags: |
             flabioassuncao/rotten-potatoes-pipe:latest
             flabioassuncao/rotten-potatoes-pipe:${{ github.run_number }}
   CD:
