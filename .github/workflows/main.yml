@@ -62,5 +62,5 @@ jobs:
         with:
           image: flabioassuncao/rotten-potatoes-pipe:${{ github.run_number }}
           manifest: |
-            k8s/deplyment.yaml
+            k8s/deployment.yaml
       
