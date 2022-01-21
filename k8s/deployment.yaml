@@ -84,7 +84,8 @@ spec:
   ports:
   - port: 80
     targetPort: 5000
-    nodePort: 30000
-  type: NodePort
+    nodePort: 30000  # isso nao precisa quando for usar na nuvem
+  type: LoadBalancer # usa esse quando for na nuvem, roda o comando 'kubectl get services' pra pegar o ip externo gerado pra acessar o serviço
+  #type: NodePort # comenta isso quando for usar na nuvem
 
 
