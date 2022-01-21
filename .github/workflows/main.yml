@@ -61,6 +61,6 @@ jobs:
         uses: Azure/k8s-deploy@v1.5
         with:
           image: flabioassuncao/rotten-potatoes-pipe:${{ github.run_number }}
-          manifest: |
+          manifests: |
             k8s/deployment.yaml
       
